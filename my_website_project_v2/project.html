@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project</title>
+        <link rel="stylesheet" href="project_style.css">
+    </head>
+    
+    <body>
+        <div class="nav-content-wrapper">
+
+            <div class="nav-wrapper">
+
+                <div class="left-side">
+                    <h2>Projects</h2>
+                </div>
+
+                <div class="right-side">
+                    <a class="nav-button" href="index.html">Home</a>
+                    <a class="nav-button" href="about.html">About</a>
+                    <a class="nav-button" href="contact.html">Contact</a>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div class="content-wrapper">
+
+                <div class="items-wrapper">
+
+                    <div class="item-wrapper">
+
+                        <div class="img-wrapper" style="background-image:url(img/quizGame.png)"></div>
+
+                        <a href="../quiz_game_with_pics/index.html" target="_blank">
+                            <div class="text-wrapper">
+                                This is my first project. It is a Quiz Game.
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="item-wrapper">
+                        
+                        <div class="img-wrapper" style="background-image:url(img/loginSite.png)"></div>
+
+                        <a href="../animated_login_form/index.html" target="_blank">
+                            <div class="text-wrapper">
+                                It is a simple login site with animation in it.
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="item-wrapper">
+
+                        <div class="img-wrapper" style="background-image:url(img/portfolioSite.png)"></div>
+
+                        <a href="../portfolio_website1/index.html" target="_blank">
+                            <div class="text-wrapper">
+                                This is my first portfolio site project, based on a youtube udemy video.
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </body>
+
+    <script>
+
+        const projectItems = document.querySelectorAll(".item-wrapper")
+
+        projectItems.forEach(projectItem => 
+        {
+            projectItem.addEventListener('mouseover', () => 
+            {
+                projectItem.childNodes[1].classList.add("img-darken");
+            })
+
+            projectItem.addEventListener('mouseout', () => 
+            {
+                projectItem.childNodes[1].classList.remove("img-darken");
+            })
+        })
+            
+    </script>
+
+</html>

@@ -1,0 +1,173 @@
+@font-face
+{
+    src: url(font/Lato-Regular.ttf);
+    font-family: lato;
+}
+
+body
+{
+    background-image: url(img/golden_gate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -150px;
+
+    font-family: lato, sans-serif;
+}
+
+/*_____________________Navbar_______________start*/
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar-left
+{
+    display: flex;
+    align-items: center;
+}
+
+.nav-link-wrapper
+{
+    margin-left: 15px;
+
+    /* navbar link alsóvonal egyik megvalósítása, de már "nav-link" classban megvan oldva */
+    /* height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: 500ms; */
+}
+/* navbar link alsóvonal effektje, de már "nav-link" classban megvan oldva */
+/* .nav-link-wrapper:hover
+{
+    border-bottom: 1px solid #2c3e50;
+} */
+
+.nav-link
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2c3e50;
+    outline: none;
+    font-size: 30px;
+
+    border-bottom: 1px solid transparent;
+    padding-bottom: 3px;
+    transition: 500ms;
+}
+
+.nav-link:hover
+{
+    color: lightseagreen;
+    border-bottom: 1px solid #2c3e50;
+}
+
+.navbar-right > a
+{
+    margin-right: 15px;
+    text-decoration: none;
+    outline: none;
+}
+
+.fa-facebook-f
+{
+    /*color: #0d2fc7;*/
+    color: #2c3e50;
+    transition: 500ms;
+}
+
+.fa-facebook-f:hover
+{
+    color: #3370f5;
+}
+
+.fa-instagram
+{
+    /*color: #e84393;*/
+    color: #2c3e50;
+    transition: 500ms;
+}
+
+.fa-instagram:hover
+{
+    color: #e84393;
+}
+
+.fa-twitter
+{
+    /*color: #0097e6;*/
+    color: #2c3e50;
+    transition: 500ms;
+}
+
+.fa-twitter:hover
+{
+    color: #0097e6;
+}
+
+.active-link
+{
+    border-bottom: 1px solid #2c3e50;
+    color: lightseagreen;
+}
+
+/*_____________________Navbar_______________end*/
+
+/*_____________________Title_______________start*/
+
+.title-bar
+{
+    text-align: center;
+}
+
+.brand
+{
+    text-transform: uppercase;
+    letter-spacing: 17px;
+    font-size: 35px;
+
+    position: relative;
+    bottom: 20px;
+}
+
+.job-title-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+    right: 8px;
+}
+
+.job-title
+{
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+
+    position: relative;
+    bottom: 60px;
+}
+
+.underline-job-title
+{
+    width: 100px;
+    margin: 10px 30px 0px 30px;
+    border-bottom: 1px solid #2c3e50;
+
+    position: relative;
+    bottom: 60px;
+}
+
+.img-wrapper > img
+{
+    position: relative;
+    right: 10px;
+    width: 250px;
+    height: 250px;
+
+    bottom: 90px;
+}
+
+/*_____________________Title_______________end*/

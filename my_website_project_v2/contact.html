@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--img src="img/road.jpg" alt="Road picture for background"-->
+
+        <div class="content-wrapper">
+            <div class="nav-wrapper">
+
+                <div class="nav-left-side">
+                    <ul>
+                        <li><a>Menü</a>
+                            <ul>
+                                <li><a href="project.html">Projects</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="nav-middle">
+                    <h1>Contact me</h1>
+                </div>
+
+                <div class="nav-right-side">
+                    <div class="nav-link-wrapper">
+                        <a href="index.html">Home</a>
+                    </div>
+
+                    <div class="nav-link-wrapper">
+                        <a href="about.html">About</a>
+                    </div>
+
+                    <div class="nav-link-wrapper active-nav-link">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-content">
+            
+                <form class="contact-form" action="contact.html" method="POST">
+                    <input type="text" class="contact-form-text" placeholder="Your Name" required>
+                    <input type="email" class="contact-form-text" placeholder="Your Email" required>
+                    <input type="text" class="contact-form-text" placeholder="Your Phone">
+                    <textarea class="contact-form-text" placeholder="Your Message" required></textarea>
+                    <input type="submit" class="contact-form-btn" value="send">
+                </form>
+                
+            </div>
+
+            <!--hr == horizontal rule-->
+            <hr class="contact-horizontal-line-positioning">
+
+            <footer>
+                <div class="footer-style contact-footer-style-positioning">
+                    <div id="change-text-style">WEBPAGE MADE BY</div> 
+                    <div>[YOUR NAME]</div>
+                </div>
+
+                <div class="contact-info">
+                    <p>eamil: random@email.com</p>
+                    <p>Tel.: 123123123123123123</p>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

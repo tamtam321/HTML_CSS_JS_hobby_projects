@@ -1,0 +1,73 @@
+body
+{
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+/*______________Nav Bar___________start*/
+
+.nav-wrapper
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right-side
+{
+    margin-top: 25px;
+}
+
+.nav-right-side a
+{
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    box-shadow: 1px 3px 2px #cbcbcb;
+    padding: 25px 30px;
+}
+
+.nav-left-side h1
+{
+    font-weight: 100;
+}
+
+/*______________Nav Bar___________end*/
+
+/*______________Home Content___________start*/
+.home-content
+{
+    background-color: white;
+
+    /* paraméter: x-tengely mozgatás, y-tengely, homályosítás */
+    box-shadow: 5px 5px 5px #cbcbcb;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-family: sans-serif;
+}
+
+.home-content h2
+{
+    color: orange;
+    font-weight: normal;
+}
+
+.footer-style
+{
+    display: flex;
+    justify-content: right;
+}
+
+#change-text-style
+{
+    margin-right: 10px;
+    color: rgb(139, 139, 139);
+}
+
+/*______________Home Content___________end*/
+
+.footer-style
+{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}

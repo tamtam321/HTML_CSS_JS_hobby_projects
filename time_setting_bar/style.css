@@ -1,0 +1,130 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #ffce00;
+    font-family: 'Saira', sans-serif;
+}
+
+/* input type=number up/down nyíl eltüntetése__start */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button
+{
+    -webkit-appearance: none;
+    margin: 0px;
+}
+
+input[type="number"]
+{
+    -moz-appearance: textfield;
+}
+/* input type=number up/down nyíl eltüntetése__end */
+
+h1
+{
+    font-size: 42px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 30px 0px;
+    font-weight: 900;
+}
+
+h1 span
+{
+    font-weight: 300;
+}
+
+.time-picker
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: 100px;
+    max-width: 200px;
+    margin: 0 auto;
+    padding: 25px 15px;
+
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+
+    color: #53565A;
+    font-size: 42px;
+    font-weight: 700;
+
+    user-select: none;
+}
+
+.time-picker .hour,
+.time-picker .minute
+{
+    position: relative;
+    min-width: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.time-picker .hour .hr,
+.time-picker .minute .min
+{
+    background: none;
+    font-size: 50px;
+    appearance: none;
+    border: none;
+    outline: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-family: "Saira", sans-serif;
+}
+
+.time-picker .hour .hour-up,
+.time-picker .hour .hour-down,
+.time-picker .minute .minute-up,
+.time-picker .minute .minute-down
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40px;
+    height: 20px;
+
+    /* arrow effect body___start */
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    cursor: pointer;
+    /* arrow effect body___end */
+}
+
+.time-picker .hour .hour-up,
+.time-picker .minute .minute-up
+{
+    top: -20px;
+    border-bottom: 20px solid #AAA;
+}
+
+.time-picker .hour .hour-down,
+.time-picker .minute .minute-down
+{
+    top: 60px;
+    border-top: 20px solid #AAA;
+}
+
+.time-picker .hour .hour-up:hover,
+.time-picker .hour .hour-down:hover,
+.time-picker .minute .minute-up:hover,
+.time-picker .minute .minute-down:hover
+{
+    border-top-color: #53565A;
+    border-bottom-color: #53565A;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Time Setting Bar</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Basic html input time picker -->
+        <!-- <input type="time" value="13:00" step="900" min="12:00" max="17:00" required> -->
+
+        <h1>Custom<span>Time</span>Picker</h1>
+        <div class="time-picker" data-time="00:00">
+            <div class="hour">
+                <div class="hour-up"></div>
+                <input type="number" class="hr" value="00">
+                <div class="hour-down"></div>
+            </div>
+            
+            <div class="separator">:</div>
+            
+            <div class="minute">
+                <div class="minute-up"></div>
+                <input type="number" class="min" value="00">
+                <div class="minute-down"></div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
